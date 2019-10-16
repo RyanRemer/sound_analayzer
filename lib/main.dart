@@ -99,8 +99,6 @@ class _RecorderPageState extends State<RecorderPage> {
   }
 
   /// Stops recording from the device's microphone
-  /// [flutterSound] is a library to measure the current
-  /// [RecorderWav]
   Future stopRecording() async {
     flutterSound.stopRecorder();
     setState(() {
